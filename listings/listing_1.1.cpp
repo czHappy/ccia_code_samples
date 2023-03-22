@@ -1,13 +1,14 @@
 #include <iostream>
 #include <thread>
-
-void hello()
+#include <string>
+void hello(std::string s)
 {
-    std::cout<<"Hello Concurrent World\n";
+    std::cout<<"Hello Concurrent World! <<s<<"\n";
 }
 
 int main()
 {
     std::thread t(hello);
     t.join();
+    std::cout<<"return 0."<<std::endl;
 }
