@@ -8,19 +8,17 @@
 template<typename Iterator,typename T>
 struct accumulate_block
 {
-    void operator()(Iterator first,Iterator last,T& result)
+    void operator()(Iterator first, Iterator last, T& result)
     {
-        result=std::accumulate(first,last,result);
+        result = std::accumulate(first, last, result);
     }
 };
 
 template<typename Iterator,typename T>
-T parallel_accumulate(Iterator first,Iterator last,T init)
+T parallel_accumulate(Iterator first, Iterator last, T init)
 {
-    unsigned long const length=std::distance(first,last);
-
-    if(!length)
-        return init;
+    unsigned long const length = std::distance(first, last);
+    if(!length) return init;
 
     unsigned long const min_per_thread=25;
     unsigned long const max_threads=
@@ -28,9 +26,9 @@ T parallel_accumulate(Iterator first,Iterator last,T init)
 
     unsigned long const hardware_threads=
         std::thread::hardware_concurrency();
-
+    std::cout<<"hardware_threads = "<<hardware_threads<<std::endl;
     unsigned long const num_threads=
-        std::min(hardware_threads!=0?hardware_threads:2,max_threads);
+        std::min(hardware_threads!=0 ? hardware_threads:2,max_threads);
 
     unsigned long const block_size=length/num_threads;
 
@@ -58,7 +56,7 @@ T parallel_accumulate(Iterator first,Iterator last,T init)
 int main()
 {
     std::vector<int> vi;
-    for(int i=0;i<10;++i)
+    for(int i=0;i<1000000;++i)
     {
         vi.push_back(10);
     }

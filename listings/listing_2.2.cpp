@@ -1,5 +1,5 @@
 #include <thread>
-
+#include <iostream>
 void do_something(int& i)
 {
     ++i;
@@ -21,7 +21,9 @@ struct func
 };
 
 void do_something_in_current_thread()
-{}
+{
+    
+}
 
 void f()
 {
@@ -31,9 +33,12 @@ void f()
     try
     {
         do_something_in_current_thread();
+        // int a = 0;
+        // int b = 1/a;
     }
     catch(...)
     {
+        std::cout<<"catch exception"<<std::endl;
         t.join();
         throw;
     }

@@ -2,7 +2,8 @@
 #include <stack>
 #include <mutex>
 #include <memory>
-
+#include <iostream>
+#include <thread>
 struct empty_stack: std::exception
 {
     const char* what() const throw()
@@ -53,16 +54,40 @@ public:
         return data.empty();
     }
 };
+// 一个线程放数字
+threadsafe_stack<int> si;
+void push_num(){
+    for(int i=0; i<20; i++) {
+        si.push(i);
+        // std::cout<<"push: "<<i<<std::endl;
+    }
+}
+void pop_num(){
+    for(int i=0; i<20; i++) {
+        int x;
+        si.pop(x);
+        // std::cout<<"pop: "<<x<<std::endl;
+    }
+}
 
+
+// 一个线程取数字
 int main()
 {
-    threadsafe_stack<int> si;
+    
     si.push(5);
     si.pop();
-    if(!si.empty())
+    for(int i=0; i<10; ++i) si.push(i);
+    while(!si.empty())
     {
         int x;
         si.pop(x);
+        std::cout<<x<<std::endl;
     }
-    
+    std::thread t1(push_num);
+    std::thread t2(pop_num);
+
+    t1.join();
+    t2.join(); //当pop空的时候抛出异常
+    return 0;
 }

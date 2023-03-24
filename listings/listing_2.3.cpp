@@ -14,7 +14,7 @@ public:
             t.join();
         }
     }
-    thread_guard(thread_guard const&)=delete;
+    thread_guard(thread_guard const&)=delete; //对一个thread对象进行拷贝构造或赋值构造是危险的
     thread_guard& operator=(thread_guard const&)=delete;
 };
 
