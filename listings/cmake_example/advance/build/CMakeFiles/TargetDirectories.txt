@@ -1,0 +1,14 @@
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/CMakeFiles/rebuild_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/CMakeFiles/edit_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/calc/CMakeFiles/rebuild_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/calc/CMakeFiles/edit_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/calc/CMakeFiles/calc.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/sort/CMakeFiles/rebuild_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/sort/CMakeFiles/edit_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/sort/CMakeFiles/sort.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/test1/CMakeFiles/rebuild_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/test1/CMakeFiles/edit_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/test1/CMakeFiles/test1.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/test2/CMakeFiles/rebuild_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/test2/CMakeFiles/edit_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/advance/build/test2/CMakeFiles/test2.dir

@@ -1,0 +1,3 @@
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/build/CMakeFiles/rebuild_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/build/CMakeFiles/edit_cache.dir
+/home/sk49/workspace/chengzhen/ccia_code_samples/listings/cmake_example/build/CMakeFiles/app.dir
